@@ -1,0 +1,23 @@
+﻿<Window x:Class="Act3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Act3"
+        mc:Ignorable="d"
+        Title="Imágen" Height="450" Width="800">
+    <Grid>
+        <Image Source="images/image.jpg" x:Name="imagen" Stretch="None" Margin="13,11,236,16"></Image>
+
+        <TextBlock HorizontalAlignment="Left" Margin="611,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Opacidad"/>
+        <RadioButton Content="Alta (100%)" HorizontalAlignment="Left" Margin="611,92,0,0" VerticalAlignment="Top" Checked="OpacidadAlta_RadioButton_Checked"/>
+        <RadioButton Content="Media (60%)" HorizontalAlignment="Left" Margin="611,119,0,0" VerticalAlignment="Top" Checked="OpacidadMedia_RadioButton_Checked"/>
+        <RadioButton Content="Baja (30%)" HorizontalAlignment="Left" Margin="611,149,0,0" VerticalAlignment="Top" Checked="OpacidadBaja_RadioButton_Checked"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="611,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Ajuste"/>
+        <RadioButton Content="Fill" HorizontalAlignment="Left" Margin="611,254,0,0" VerticalAlignment="Top" Checked="AjusteFill_RadioButton_Checked"/>
+        <RadioButton Content="Uniform" HorizontalAlignment="Left" Margin="611,284,0,0" VerticalAlignment="Top" Checked="AjusteUniform_RadioButton_Checked"/>
+        <RadioButton Content="UniformToFill" HorizontalAlignment="Left" Margin="611,315,0,0" VerticalAlignment="Top" Checked="AjusteUniformToFill_RadioButton_Checked"/>
+        <RadioButton Content="None" HorizontalAlignment="Left" Margin="611,346,0,0" VerticalAlignment="Top" Checked="AjusteNone_RadioButton_Checked"/>
+    </Grid>
+</Window>
